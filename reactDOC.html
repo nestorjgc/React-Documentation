@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>React Documentation</header>
+
+      <a
+        href="#React_Documentation"
+        class="nav-link"
+        style="
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          background-color: black;
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 10%;
+        "
+        >React Documentation</a
+      >
+
+      <a href="#Introduction_JSX" class="nav-link">Introduction JSX</a>
+      <a href="#Components" class="nav-link">Components</a>
+      <a href="#State_Lifecycle" class="nav-link">State Lifecycle</a>
+      <a href="#Handling_Events" class="nav-link">Handling Events</a>
+      <a href="#Forms" class="nav-link">Forms</a>
+      <a href="#Reference" class="nav-link">Reference</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="React_Documentation">
+        <header class="header__main">React Documentation</header>
+        <p>
+          React is a Javascript library that is made for building single page
+          applications. React is an application made by components, components
+          are a user interface. The good thing about components is that they can
+          be reused in the whole application at any time. Before we jump in
+          React JS. There are a few requirements we need to have in mind before
+          jumping in.
+        </p>
+
+        <header>
+          <h3>JavaScript Requirements:</h3>
+        </header>
+        <ul>
+          <li>
+            <code> CallBacks </code>
+          </li>
+          <li>
+            <code> coping</code>
+          </li>
+
+          <li>
+            <code> Passing Functions </code>
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="Introduction_JSX">
+        <header>
+          <h4>Introduction JSX</h4>
+        </header>
+        <p class="components__Jsx">
+          JSX is a way to write html in our JavaScript. It is called JSX, and it
+          is a syntax extension to JavaScript. We recommend using it with React
+          to describe what the UI should look like. JSX may remind you of a
+          template language, but it comes with the full power of JavaScript.
+        </p>
+        <img
+          src="https://miro.medium.com/max/720/1*rJB4Tcz_ZZnliNxYmdfGqw.jpeg"
+          alt="react__jsx"
+          class="jsx__img"
+        />
+      </section>
+
+      <section class="main-section" id="Components">
+        <header>
+          <h2>Components</h2>
+        </header>
+        <p class="components__p">
+          React components implement a render() method that takes input data and
+          returns what to display. This example uses an XML-like syntax called
+          JSX. Input data that is passed into the component can be accessed by
+          <span class="bg__code"> render() via this.props. </span>
+        </p>
+        <img
+          src="img/reactcomponent.PNG"
+          alt="component"
+          class="component__img"
+        />
+      </section>
+
+      <section class="main-section" id="State_Lifecycle">
+        <header>
+          <h2>State Lifecycle</h2>
+        </header>
+
+        <ul class="state__ul">
+          <li>
+            <code>
+              componentWillMount: Immediately before initial rendering.
+            </code>
+          </li>
+          <li>
+            <code>
+              shouldComponentUpdate: Before rendering, after receiving new props
+              or state.</code
+            >
+          </li>
+          <li>
+            <code>
+              componentWillReceiveProps: When component receives new props.
+            </code>
+          </li>
+          <li>
+            <code>componenDidMount: Immediately after initial rendering. </code>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Handling_Events">
+        <header>
+          <h2>Handling Events</h2>
+        </header>
+
+        <p class="components__Jsx">
+          Handling events with React elements is very similar to handling events
+          on DOM elements. There are some syntax differences:
+        </p>
+        <p class="components__Jsx">
+          <code> For example, the HTML: </code>
+        </p>
+        <p>
+          <img src="img/state.PNG" alt="state" class="component__img" />
+        </p>
+
+        <p class="components__Jsx">
+          <code> is slightly different in React: </code>
+        </p>
+        <img src="img/state2.PNG" alt="state2" class="component__img" />
+        <p class="components__Jsx">
+          Another difference is that you cannot return false to prevent default
+          behavior in React. You must call preventDefault explicitly. For
+          example, with plain HTML, to prevent the default form behavior of
+          submitting, you can write:
+        </p>
+        <img src="img/state3.PNG" alt="state3" class="component__img" />
+
+        <ul class="state__ul">
+          <li>
+            <code>
+              React events are named using camelCase, rather than lowercase.
+            </code>
+          </li>
+          <li>
+            <code>
+              With JSX you pass a function as the event handler, rather than a
+              string.
+            </code>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Forms">
+        <header>
+          <h2>Forms</h2>
+        </header>
+
+        <p class="components__Jsx">
+          HTML form elements work a bit differently from other DOM elements in
+          React, because form elements naturally keep some internal state. For
+          example, this form in plain HTML accepts a <code> single name: </code>
+        </p>
+        <img src="img/forms.PNG" alt="forms" class="component__img" />
+        <p class="components__Jsx">
+          This form has the default HTML form behavior of browsing to a new page
+          when the user submits the form. If you want this behavior in React, it
+          just works. But in most cases, it’s convenient to have a JavaScript
+          function that handles the submission of the form and has access to the
+          data that the user entered into the form. The standard way to achieve
+          this is with a technique called “controlled components”.
+        </p>
+      </section>
+
+      <section class="main-section footer" id="Reference">
+        <header>
+          <h2>Reference</h2>
+        </header>
+        <ul>
+          <li>
+            All the documentation in this page is a mix of own words and
+            information that be found at:
+            <a href="https://reactjs.org/" target="_blank">React</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

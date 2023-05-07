@@ -178,6 +178,17 @@ h2 {
   text-align: center;
 }
 
+.footercopy {
+  text-align: center;
+  margin-top: 2%;
+  background-color: #303c42;
+  color: #fbfbfb;
+  padding: 1%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
 .footer > ul > li {
   list-style: none;
 }

@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React Documentation</title>
+    <link rel="icon" type="image/x-icon" href="./img/react.png" />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <nav id="navbar">
       <header>React Documentation</header>
@@ -33,17 +36,51 @@
       <a href="#Handling_Events" class="nav-link">Handling Events</a>
       <a href="#Forms" class="nav-link">Forms</a>
       <a href="#Reference" class="nav-link">Reference</a>
+      <a href="#LearnReact" class="nav-link">Learn React!</a>
     </nav>
     <main id="main-doc">
       <section class="main-section" id="React_Documentation">
-        <header class="header__main">React Documentation</header>
+        <header class="intro-react header__main">React Documentation</header>
+
+        <h4 class="intro-react">Introduction to React</h4>
+        <img
+          src="./img/react.png"
+          alt="React Introduction Picture"
+          class="react-intro"
+        />
         <p>
           React is a Javascript library that is made for building single page
-          applications. React is an application made by components, components
-          are a user interface. The good thing about components is that they can
-          be reused in the whole application at any time. Before we jump in
-          React JS. There are a few requirements we need to have in mind before
-          jumping in.
+          applications. React was created in 2011 by a Facebook employee and its
+          purpose was to improve performance and simplify code maintenance.
+          React is also an application made by components, components we can
+          easily rehuse in our application to reduce code. The good thing about
+          components is that they can be reused in the whole application at any
+          time. Before we jump in React JS, I would highly encourage you have
+          some foundation with JavaScript like:
+        </p>
+
+        <p>Some key features that I like about React:</p>
+        <ol>
+          <li>
+            SPA | Single Page Application | Main benefit is that is very fast
+            and the website doesn't refresh when navigating on it.
+          </li>
+          <li>
+            Virtual DOM | It's a simplified and optimized version of the real
+            DOM and it helps React to make the updates that it needs by passing
+            props or states
+          </li>
+          <li>
+            JSX | JavaScript XML It is call like that because it's a syntax
+            extension to Javascript and it allows us to write HTML in
+            JavaScript.
+          </li>
+        </ol>
+
+        <p>
+          One of the only things that I dislike about React is that is a library
+          and because of that, you need to add many external libraries to make
+          your application work.
         </p>
 
         <header>
@@ -51,14 +88,23 @@
         </header>
         <ul>
           <li>
-            <code> CallBacks </code>
+            <code>
+              Callbacks | This is very important when it comes to fetch data.
+            </code>
           </li>
           <li>
-            <code> coping</code>
+            <code
+              >Objects & Arrays | React uses these two to for storing and
+              manipulating data. It is essential to also know how to destructure
+              and also some array methods like the popular "map"</code
+            >
           </li>
 
           <li>
-            <code> Passing Functions </code>
+            <code>
+              Functions & Classes | React components are based in returning
+              functions and classes with JSX syntax.
+            </code>
           </li>
         </ul>
       </section>
@@ -187,7 +233,36 @@
           this is with a technique called “controlled components”.
         </p>
       </section>
+      <section class="main-section" id="LearnReact">
+        <header>
+          <h2>Learn React!</h2>
+        </header>
 
+        <div class="container">
+          <div class="box1">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/SqcY0GlETPk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="box2">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/bMknfKXIFA8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
       <section class="main-section footer" id="Reference">
         <header>
           <h2>Reference</h2>
